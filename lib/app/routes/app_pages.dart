@@ -1,3 +1,4 @@
+import 'package:flutter_getx_template/app/modules/home/presentation/views/dashhoard.dart';
 import 'package:get/get.dart';
 
 import '../modules/home/presentation/bindings/home_binding.dart';
@@ -16,5 +17,11 @@ abstract class AppPages {
       page: () => const HomeView(),
       binding: HomeBinding(),
     ),
+    GetPage(
+      name: _Paths.DASHBOARD,
+      page: () => const DashboardView(),
+      binding: HomeBinding(),
+    ),
+    
   ];
 }
